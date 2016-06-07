@@ -171,8 +171,24 @@ footer{
 }
 
 #fLinks{
-  display:flex;
-  justify-content: space-around;
-  flex-grow:1;
+  width:100%;
   padding-top:25px;
+  display:flex;
+  flex-grow:1;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content:center;
+  align-items: center;
+}
+#social{
+  width:50%;
+}
+
+.social{
+  display:flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
 }
