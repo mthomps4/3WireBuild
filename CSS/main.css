@@ -19,7 +19,8 @@ html, body
 	margin:0;
   padding:0;
   height:100%;
-	background-color:#DDEEFF;
+	background-color:#EEF;
+  /*#DEF*/
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -39,7 +40,8 @@ h3{font-size:1em;}
 #main-header
 {
 	border-bottom:solid 6px orange;
-	background-color:#0cf;
+	background-color:navy;
+  /*navy?ocf*/
 	display:flex;
 	flex-direction:column;
 }
@@ -115,14 +117,15 @@ h3{font-size:1em;}
 	flex-direction:row;
   flex-grow:1;
 }
+
 #buttons a{
   flex-grow:1;
   align-content:center;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top:20px;
-  padding-bottom:20px;
+  padding-top:10px;
+  padding-bottom:10px;
   background: #3a82b3;
   color:white;
   border:none;
@@ -148,13 +151,13 @@ h3{font-size:1em;}
 
 /*****Footer and Main Section********/
 #Wrapper{
-  height:calc(100vh - 340px);/*Adust pixels based on Header Height*/
+  height:calc(100vh - 240px);/*Adust pixels based on Header Height*/
   width:100%;
   padding:20px; /*Used for Main-Section*/
 }
 
 #main-section{
-	height:calc(100vh - 380px);
+	height:calc(100vh - 280px);
   overflow-y:auto;
 }
 
@@ -180,22 +183,26 @@ footer{
 #fContact{
   flex-grow:1;
   padding-left:1em;
-  margin-right:auto;
 }
 
 #social{
   margin-right:1em;
 }
 
-.social{
-  height:50px;
+.social, .social2{
+  display:flex;
   width:100%;
 }
 
-.social a{
-  padding:10px;
-  width:50px;
-  height:50px;
+.socialLink, .socialLink2{
+  display:flex;
+  flex-grow:1;
+  flex-wrap:wrap;
+  flex-direction:row;
+
+  width: 32px;
+  height: 32px;
+  margin: 5px;
 }
 
 .social a:nth-child(1){
@@ -204,7 +211,6 @@ footer{
   background-size:contain;
   background-position: center;
   background-repeat:no-repeat;
-  background-size: cover;
 }
 
 .social a:nth-child(2){
@@ -212,28 +218,78 @@ footer{
   background-image: url("../IMAGES/Social/twitter-gray.png");
   background-size: contain;
   background-repeat:no-repeat;
+  background-position: center;
 }
 .social a:nth-child(3){
   border:none;
   background-image: url("../IMAGES/Social/instagram-2-gray.png");
   background-size: contain;
   background-repeat:no-repeat;
+  background-position: center;
 }
-.social a:nth-child(4){
+.social2 a:nth-child(1){
   border:none;
   background-image: url("../IMAGES/Social/github-gray.png");
   background-size: contain;
   background-repeat:no-repeat;
+  background-position: center;
 }
-.social a:nth-child(5){
+.social2 a:nth-child(2){
   border:none;
   background-image: url("../IMAGES/Social/email-gray.png");
   background-size: contain;
   background-repeat:no-repeat;
+  background-position: center;
 }
-.social a:nth-child(6){
+.social2 a:nth-child(3){
   border:none;
   background-image: url("../IMAGES/Social/linkedin-gray.png");
   background-size: contain;
   background-repeat:no-repeat;
+  background-position: center;
+}
+
+/*Social Hover Color*/
+.social a:nth-child(1):hover{
+  border:none;
+  background-image: url("../IMAGES/Social/fb-like.png");
+  background-size:contain;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+.social a:nth-child(2):hover{
+  border:none;
+  background-image: url("../IMAGES/Social/twitter.png");
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+.social a:nth-child(3):hover{
+  border:none;
+  background-image: url("../IMAGES/Social/instagram-2.png");
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+.social2 a:nth-child(1):hover{
+  border:none;
+  background-image: url("../IMAGES/Social/github.png");
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+.social2 a:nth-child(2):hover{
+  border:none;
+  background-image: url("../IMAGES/Social/email.png");
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+.social2 a:nth-child(3):hover{
+  border:none;
+  background-image: url("../IMAGES/Social/linkedin.png");
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: center;
 }
