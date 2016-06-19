@@ -3,17 +3,17 @@ Main portfolio website. @mthomps4 #3WireBuild
 
 #Home 
 - About 3 wire build and the site 
-- 3 buttons to access Project categories (may change for other use) 
+- 3 buttons to access site 
 
 #About 
 - Bio 
 - Contact Form 
 - Resume 
-- Github direct link 
+- Skillset infograph 
 
 #Projects 
 - Designs 
-- Widget Builds 
+- Widget Builds (gif/images) 
 - Finished Woodworking Projects 
 
 #Resources 
