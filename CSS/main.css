@@ -19,7 +19,7 @@ html, body
 	margin:0;
   padding:0;
   height:100%;
-	background-color:#E3F2FD;
+	background-color:#ECEFF1;
   /*#DEF*/
   font-family: 'Open Sans', sans-serif;
 }
@@ -39,8 +39,8 @@ h3{font-size:1em;}
 
 #main-header
 {
-	border-bottom:solid 6px #FF9800;
-	background-color:#0D47A1;
+	border-bottom:solid 6px #00BCD4;
+	background-color:white;
   text-align: center;
 	display:flex;
 	flex-direction:column;
@@ -52,7 +52,7 @@ h3{font-size:1em;}
 }
 
 #title{
-	color:white;
+	color:#455A64;
 	font-size:3em;
 	margin-top:20px;
   margin-bottom:0;
@@ -64,7 +64,7 @@ h3{font-size:1em;}
 
 #tag-line{
 	font-size:1em;
-  color:white;
+  color:#607D8B;
 	font-style:normal;
 }
 
@@ -72,14 +72,14 @@ h3{font-size:1em;}
 /*****Navigation********/
 #main-nav a:hover /*Full Button Rollover*/
 {
-	background-color: #1565C0;
+	background-color:#00BCD4;
 }
 
 #main-nav a:visited, #main-nav a
 		{color:white;}
 
 #main-nav a.active{
-	background-color:#1565C0;
+	background-color:#00BCD4;
 }
 
 #main-nav /*Mobile Block*/
@@ -104,39 +104,10 @@ h3{font-size:1em;}
 	padding:18px;
 }
 
-/*****Navigation2********/
-#main-nav2 a:hover /*Full Button Rollover*/
-{
-	background-color: #1565C0;
-}
 
-#main-nav2 a:visited, #main-nav2 a
-		{color:white;}
-
-#main-nav2 a.active{
-	background-color:#1565C0;
-}
-
-#main-nav2 /*Mobile Block*/
-{
-	display:flex;
-	flex-direction:column;
-	justify-content:flex-end;
-  text-align:center;
-}
-
-#main-nav2 a /*Check Flex Box Options for Items*/
-{
-	flex-grow:1; /*Keeps all "Buttons" sames size*/
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	text-align:center;
-	padding:18px;
-}
 /*****Buttons********/
 #menuButton{
-  background-color: black; /*#0D47A1*/
+  background-color: #00BCD4; /*#0D47A1*/
   color:white;
   width:175px;
   height:75px;
@@ -172,15 +143,15 @@ h3{font-size:1em;}
   text-align: center;
   padding-top:10px;
   padding-bottom:10px;
-  background: #2962FF;
+  background: #00ACC1;
   color:white;
   border:none;
-  border-left: solid #1f628d .75px;
-  border-right: solid #1f628d .75px;
+  border-left: solid #607D8B .75px;
+  border-right: solid #607D8B .75px;
 }
 
 #buttons a:hover{
-	background: #2979FF;
+	background:#B0BEC5;
   text-decoration: none;
 }
 
@@ -198,9 +169,13 @@ h3{font-size:1em;}
 
 /*****Footer and Main Section********/
 #Wrapper{
-  height:calc(100vh - 240px);/*Adust pixels based on Header Height*/
+  height:calc(100vh - 260px);/*Adust pixels based on Header Height*/
   width:100%;
   padding:20px; /*Used for Main-Section*/
+}
+
+#Wrapper p{
+  margin-bottom: 2em;
 }
 
 #main-section{
@@ -215,8 +190,8 @@ h3{font-size:1em;}
 
 footer{
   height:200px;
-  background-color: black;
-  color:#888;
+  background-color:#37474F;
+  color:#90A4AE;
 }
 
 #fLinks{
@@ -254,7 +229,7 @@ footer{
 
 .social a:nth-child(1){
   border:none;
-  background-image: url("../IMAGES/Social/fb-like-gray.png");
+  background-image: url("../IMAGES/Social/fb-like.png");
   background-size:contain;
   background-position: center;
   background-repeat:no-repeat;
@@ -262,78 +237,33 @@ footer{
 
 .social a:nth-child(2){
   border:none;
-  background-image: url("../IMAGES/Social/twitter-gray.png");
+  background-image: url("../IMAGES/Social/twitter.png");
   background-size: contain;
   background-repeat:no-repeat;
   background-position: center;
 }
 .social a:nth-child(3){
   border:none;
-  background-image: url("../IMAGES/Social/instagram-2-gray.png");
+  background-image: url("../IMAGES/Social/instagram-2.png");
   background-size: contain;
   background-repeat:no-repeat;
   background-position: center;
 }
 .social2 a:nth-child(1){
   border:none;
-  background-image: url("../IMAGES/Social/github-gray.png");
+  background-image: url("../IMAGES/Social/github.png");
   background-size: contain;
   background-repeat:no-repeat;
   background-position: center;
 }
 .social2 a:nth-child(2){
   border:none;
-  background-image: url("../IMAGES/Social/email-gray.png");
-  background-size: contain;
-  background-repeat:no-repeat;
-  background-position: center;
-}
-.social2 a:nth-child(3){
-  border:none;
-  background-image: url("../IMAGES/Social/linkedin-gray.png");
-  background-size: contain;
-  background-repeat:no-repeat;
-  background-position: center;
-}
-
-/*Social Hover Color*/
-.social a:nth-child(1):hover{
-  border:none;
-  background-image: url("../IMAGES/Social/fb-like.png");
-  background-size:contain;
-  background-position: center;
-  background-repeat:no-repeat;
-}
-
-.social a:nth-child(2):hover{
-  border:none;
-  background-image: url("../IMAGES/Social/twitter.png");
-  background-size: contain;
-  background-repeat:no-repeat;
-  background-position: center;
-}
-.social a:nth-child(3):hover{
-  border:none;
-  background-image: url("../IMAGES/Social/instagram-2.png");
-  background-size: contain;
-  background-repeat:no-repeat;
-  background-position: center;
-}
-.social2 a:nth-child(1):hover{
-  border:none;
-  background-image: url("../IMAGES/Social/github.png");
-  background-size: contain;
-  background-repeat:no-repeat;
-  background-position: center;
-}
-.social2 a:nth-child(2):hover{
-  border:none;
   background-image: url("../IMAGES/Social/email.png");
   background-size: contain;
   background-repeat:no-repeat;
   background-position: center;
 }
-.social2 a:nth-child(3):hover{
+.social2 a:nth-child(3){
   border:none;
   background-image: url("../IMAGES/Social/linkedin.png");
   background-size: contain;

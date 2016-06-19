@@ -1,37 +1,42 @@
 
 @media (min-width: 489px){
 
-	ul#main-nav2{
-		flex-direction:row;
-		position:relative;
-	  background:rgba(0, 0, 0, 0.5);
-	}
-
-	#main-nav2 a {
-		padding:10px;
-		height:40px;
-		background-color:#0D47A1;
-		display:flex;
-		justify-content:center;
-		align-items:center;
-		border:none;
-	}
-
-	#main-nav2 a.active{
-		background-color:#0D47A1;
-		border-bottom:solid 2px white;
-		color:white;
-		background-image:none;
-	}
-
-	#main-nav2 a:hover{
-		border-bottom: solid 2px white;
-		background-color: #1565C0;
-	}
-
 	.nametag{
 	  margin-top:0px;
 	  margin-bottom:20px;
+	}
+	/*****Navigation2********/
+
+	#main-nav2 /*Mobile Block*/
+	{
+		display:flex;
+		flex-direction:row;
+		justify-content:flex-end;
+	  text-align:center;
+		height:40px;
+	}
+
+	#main-nav2 a /*Check Flex Box Options for Items*/
+	{
+		flex-grow:1; /*Keeps all "Buttons" sames size*/
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+		padding:18px;
+		background-color:#B0BEC5;
+	}
+
+	#main-nav2 a:hover /*Full Button Rollover*/
+	{
+		background-color: #00BCD4;
+	}
+
+	#main-nav2 a:visited, #main-nav2 a
+			{color:white;}
+
+	#main-nav2 a.active{
+		background-color:#00BCD4;
 	}
 
 }

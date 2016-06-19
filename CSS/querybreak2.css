@@ -1,38 +1,42 @@
 
 @media (min-width:1125px){
 
+	#Wrapper{
+		width:80%;
+		margin:auto;
+	}
 	#main-header{
 		flex-direction:row;
 		align-items:flex-end;
 	}
 
-	#title{
+	.nametag{
 		margin-right: auto;
-		margin-top:10px;
+		margin-top:0px;
+		margin-left:0em;
 	}
 
-	#main-nav a {
-		padding-left:2em;
-		padding-right:2em;
-		font-size:1em;
-		background-image:none;
+	#main-nav2 {
+		margin-right: 2em;
+	}
+	#main-nav2 a{
+	padding-right:1em;
+	color:black;
+	padding-left: 2em;
+	padding-right:2em;
+	margin-right:2em;
 	}
 
-	#main-nav a:hover{
-		border-bottom: solid 2px white;
-		background-color:darkblue;
+	#main-nav2 a:hover{
 	}
 
-	#main-nav a.active{
-		border-bottom: solid 2px white;
-		background-color:darkblue;
-		color:white;
+	#main-nav2 a.active{
 	}
 
 	#main-header{
 		padding-left:3em;
 	}
-
+/*
 	#main-content{
 		font-size: 1.3em;
 		width:100%;
@@ -73,7 +77,7 @@
 	.infobox{
 		padding:0px;
 		height:75px;
-	}
+	}*/
 
 
 }
