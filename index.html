@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<HTML lang="en">
+<HTML lang="en" ng-app="app">
 <HEAD>
 <META charset="utf-8">
 <!-- <META name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1"> -->
@@ -13,8 +13,7 @@
 <link rel="stylesheet" href="CSS/querybreak2.css" type="text/css" >
 
 </head>
-
-	<body ng-app="app">
+	<body>
 
 		<div main-header></div>
 
@@ -27,8 +26,9 @@
 		<script src="app.js"></script>
 		<script src="CONTROLLERS/controllers.js"></script>
 		<script src="DIRECTIVES/directives.js"></script>
-		<script src="mobile.js"></script>
+		<!-- <script src="mobile.js"></script> -->
 
+		<div ng-controller="NavController"></div>
 
 	</BODY>
 </HTML>
