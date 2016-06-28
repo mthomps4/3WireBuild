@@ -2,6 +2,7 @@
 
 app.directive("mainHeader", function(){
 return{
-    templateUrl: "../TEMPLATES/_header.html"
+    templateUrl: "../TEMPLATES/_header.html",
+    controller: "NavController"
 };
 });
