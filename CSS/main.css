@@ -78,8 +78,9 @@ h3{font-size:1em;}
 #main-nav a:visited, #main-nav a
 		{color:white;}
 
-#main-nav a.active{
-	background-color:#00BCD4;
+
+#main-nav .active, #main-nav2 .active2{
+  background-color:#00BCD4;
 }
 
 #main-nav /*Mobile Block*/
@@ -174,7 +175,7 @@ box-shadow: 0px 0px 7px 0px rgba(136,136,136,1);
 
 /*****Footer and Main Section********/
 #Wrapper{
-  height:calc(100vh - 260px);/*Adust pixels based on Header Height*/
+  /*height:calc(100vh - 260px);/*Adust pixels based on Header Height*/*/
   width:100%;
   padding:20px; /*Used for Main-Section*/
 }
@@ -184,8 +185,8 @@ box-shadow: 0px 0px 7px 0px rgba(136,136,136,1);
 }
 
 #main-section{
-	height:calc(100vh - 280px);
-  overflow-y:auto;
+	/*height:calc(100vh - 280px);*/
+  /*overflow-y:auto;*/
 }
 
 #main-section::-webkit-scrollbar{

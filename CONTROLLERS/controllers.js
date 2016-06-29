@@ -18,7 +18,23 @@ app.controller('BlogController', function($scope) {
 
 });
 
-app.controller('NavController', function($scope,$window,$document){
+app.controller('active', function($scope, $location){
+        $scope.isActive = function (viewLocation) {
+        var active = (viewLocation === $location.path());
+        return active;
+        };
+        console.log($location.path());
+    });
+
+app.controller('active2', function($scope, $location){
+            $scope.isActive = function (viewLocation) {
+            var active = (viewLocation === $location.path());
+            return active;
+            };
+            console.log($location.path());
+        });
+
+app.controller('NavController', function($scope,$window,$document, $location){
 
     var button = document.getElementById('menuButton');
     var nav1 = document.getElementById('main-nav');
@@ -65,4 +81,5 @@ app.controller('NavController', function($scope,$window,$document){
     nav1.addEventListener('click', function(event){
       this.style.display = "none";
     })
+
 }); //END NAV CONTROLLER
