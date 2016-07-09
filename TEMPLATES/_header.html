@@ -1,12 +1,12 @@
-<header id="main-header">
+<header id="main-header" >
 
   <button id="menuButton">menu</button>
-  <ul id="main-nav" style="display: none;">
-      <a href="/"><li>Home</li></a>
-      <a href="#/about"><li>About</li></a>
-      <a href="#/projects"><li>Projects</li></a>
-      <a href="#/resources"><li>Resources</li></a>
-      <a href="#/blog"><li>Blog</li></a>
+  <ul id="main-nav" style="display: none;" ng-controller="active">
+      <a ng-class="{ active: isActive('/') }" href="#/"><li>Home</li></a>
+      <a ng-class="{ active: isActive('/about') }" href="#/about"><li>About</li></a>
+      <a ng-class="{ active: isActive('/projects') }" href="#/projects"><li>Projects</li></a>
+      <a ng-class="{ active: isActive('/resources') }" href="#/resources"><li>Resources</li></a>
+      <a ng-class="{ active: isActive('/blog') }" href="#/blog"><li>Blog</li></a>
   </ul>
 
     <a class="nametag" href="#/">
@@ -14,12 +14,12 @@
       <span id="tag-line">Designer • Developer • Builder</span>
     </a>
 
-    <ul id="main-nav2" style="display: none;">
-        <a href="#/3WireBuild"><li>Home</li></a>
-        <a href="#/about"><li>About</li></a>
-        <a href="#/projects"><li>Projects</li></a>
-        <a href="#/resources"><li>Resources</li></a>
-        <a href="#/blog"><li>Blog</li></a>
+    <ul id="main-nav2" style="display: none;" ng-controller='active2'>
+        <a ng-class="{ active2: isActive('/') }" href="#/"><li>Home</li></a>
+        <a ng-class="{ active2: isActive('/about') }" href="#/about"><li>About</li></a>
+        <a ng-class="{ active2: isActive('/projects') }" href="#/projects"><li>Projects</li></a>
+        <a ng-class="{ active2: isActive('/resources') }" href="#/resources"><li>Resources</li></a>
+        <a ng-class="{ active2: isActive('/blog') }" href="#/blog"><li>Blog</li></a>
     </ul>
 
 </header> <!--main-navigation-->
