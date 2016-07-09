@@ -26,8 +26,10 @@ html, body
 
 a {text-decoration: none;}
 
-h2{font-size: 1.3em;}
-h3{font-size:1em;}
+.logo-holder h1{font-weight: 400;}
+.logo-holder h2{font-size: 1.3em;}
+.logo-holder h3{font-size:1em;font-weight: 400;}
+.logo-holder p{opacity:.7;}
 
 
 /*****Main Header********/
@@ -64,7 +66,8 @@ h3{font-size:1em;}
 
 #tag-line{
 	font-size:1em;
-  color:#607D8B;
+  color:#455A64;
+  opacity:.8;
 	font-style:normal;
 }
 
@@ -195,9 +198,10 @@ box-shadow: 0px 0px 7px 0px rgba(136,136,136,1);
 }
 
 footer{
-  height:200px;
-  background-color:#37474F;
-  color:#90A4AE;
+  height:135px;
+  background-color:#263238;
+  color:white;
+  opacity:.7;
 }
 
 #fLinks{
@@ -211,6 +215,7 @@ footer{
 #fContact{
   flex-grow:1;
   padding-left:1em;
+  opacity:.7;
 }
 
 #social{
@@ -230,8 +235,8 @@ footer{
   justify-content: center;
   align-items: center;
 
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   margin: 5px;
   margin-right:10px;
 }

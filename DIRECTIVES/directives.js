@@ -5,3 +5,9 @@ app.directive("mainHeader", function(){
       templateUrl: "../TEMPLATES/_header.html",
   };
 });
+
+app.directive("mainFooter", function(){
+  return{
+      templateUrl: "../TEMPLATES/_footer.html",
+  };
+});
