@@ -160,47 +160,7 @@ a {text-decoration: none;}
 }
 
 
-/*****Circle Image Holder********/
-.profileImg{
-  width:125px;
-  height:125px;
-  border-radius:50%;
-  margin:auto;
-  margin-bottom:20px;
-  display:block;
-
-  background-image: url("../IMAGES/dovetails.jpg");
-  background-position: 58% 70%;
-  background-size: 300px;
-}
-
-.workImg{
-  width:125px;
-  height:125px;
-  border-radius:50%;
-  margin:auto;
-  margin-bottom:20px;
-  display:block;
-
-  background-image: url("../IMAGES/dovetails.jpg");
-  background-position: 58% 70%;
-  background-size: 300px;
-}
-
 /*****Main Section********/
-
-.woodImg{
-  background-image: url("../IMAGES/dovetails.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 300px;
-
-  border-radius: 50% 50%;
-  border:2px solid black;
-  width:150px;
-  height:150px;
-}
-
 .logo-holder h1, .logo-holder h3{
   font-weight: 400;
   text-align: center;
@@ -212,6 +172,7 @@ a {text-decoration: none;}
 .logo-holder h3{
   font-size:1.5em;
   margin-bottom: 10px;
+  color:white;
 }
 
 .logo-holder p{
@@ -232,14 +193,45 @@ a {text-decoration: none;}
   opacity:.7;
 }
 
-#main-section{
-	/*height:calc(100vh - 280px);*/
-  /*overflow-y:auto;*/
+.flexContent{
+  background-color: #90A4AE;
+  color:white;
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content:space-between;
+  align-items: center;
+  border-bottom:solid 4px #00BCD4;
+  margin-bottom: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
-#main-section::-webkit-scrollbar{
-	width:0px;
-	background:transparent;
+.logo-holder h3{
+  flex-grow: 1;
+  font-size: 2em;
+  font-weight: 300;
+  margin-right: 20px;
+}
+
+/*****Circle Image Holders********/
+.circleImg{
+  width:125px;
+  height:125px;
+  border-radius:50%;
+  margin:20px;
+  border:3px solid white;
+}
+
+.profileImg{
+  background-image: url("../IMAGES/Profile.jpg");
+  background-position: center;
+  background-size: contain;
+}
+
+.workImg{
+  background-image: url("../IMAGES/dovetails.jpg");
+  background-position: 58% 70%;
+  background-size: 300px;
 }
 
 /*****Footer********/

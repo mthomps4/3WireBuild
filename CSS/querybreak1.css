@@ -47,4 +47,31 @@
 		margin-left: 3em;
 	  margin-right:3em;
 	}
+
+	/*****Circle Image Holder********/
+	.profileImg{
+	  width:125px;
+	  height:125px;
+	  border-radius:50%;
+	  margin:auto;
+	  margin-bottom:20px;
+	  display:block;
+
+	  background-image: url("../IMAGES/dovetails.jpg");
+	  background-position: 58% 70%;
+	  background-size: 300px;
+	}
+
+	.workImg{
+	  width:125px;
+	  height:125px;
+	  border-radius:50%;
+	  margin:auto;
+	  margin-bottom:20px;
+	  display:block;
+
+	  background-image: url("../IMAGES/dovetails.jpg");
+	  background-position: 58% 70%;
+	  background-size: 300px;
+	}
 }
