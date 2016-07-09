@@ -26,12 +26,6 @@ html, body
 
 a {text-decoration: none;}
 
-.logo-holder h1{font-weight: 400;}
-.logo-holder h2{font-size: 1.3em;}
-.logo-holder h3{font-size:1em;font-weight: 400;}
-.logo-holder p{opacity:.7;}
-
-
 /*****Main Header********/
 
 #Main-Container
@@ -177,6 +171,26 @@ box-shadow: 0px 0px 7px 0px rgba(136,136,136,1);
 }
 
 /*****Footer and Main Section********/
+
+.logo-holder h1, .logo-holder h3{
+  font-weight: 400;
+  text-align: center;
+  margin:0;
+  padding:0;
+  color:black;
+}
+
+.logo-holder h3{
+  font-size:1.5em;
+  margin-bottom: 10px;
+}
+
+.logo-holder p{
+  text-align:left;
+  opacity:.7;
+}
+
+
 #Wrapper{
   /*height:calc(100vh - 260px);/*Adust pixels based on Header Height*/*/
   width:100%;
