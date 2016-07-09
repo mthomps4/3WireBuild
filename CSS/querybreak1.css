@@ -39,4 +39,12 @@
 		background-color:#00BCD4;
 	}
 
+	#Wrapper{
+		/*height:calc(100vh - 260px);/*Adust pixels based on Header Height*/*/
+	}
+
+	#Wrapper p{
+		margin-left: 3em;
+	  margin-right:3em;
+	}
 }
