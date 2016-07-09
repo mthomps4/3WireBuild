@@ -1,8 +1,7 @@
 'use strict';
 
 app.directive("mainHeader", function(){
-return{
-    templateUrl: "../TEMPLATES/_header.html",
-    controller: "NavController"
-};
+  return{
+      templateUrl: "../TEMPLATES/_header.html",
+  };
 });
