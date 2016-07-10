@@ -161,21 +161,35 @@ a {text-decoration: none;}
 
 
 /*****Main Section********/
-.logo-holder h1, .logo-holder h3{
+#main-content h1{
+  font-size: 3em;
+  font-weight: 200;
+  text-align: center;
+  width:100%;
+  padding:20px;
+  color:black;
+
+  border-bottom:solid 4px #00BCD4;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top:solid 4px #00BCD4;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+}
+
+#main-content h3{
   font-weight: 400;
   text-align: center;
   margin:0;
   padding:0;
   color:black;
-}
-
-.logo-holder h3{
   font-size:1.5em;
   margin-bottom: 10px;
   color:white;
 }
 
-.logo-holder p{
+#main-content p{
   text-align:left;
   opacity:.7;
 }
@@ -206,7 +220,7 @@ a {text-decoration: none;}
   border-bottom-right-radius: 20px;
 }
 
-.logo-holder h3{
+#main-content h3{
   flex-grow: 1;
   font-size: 2em;
   font-weight: 300;
@@ -217,15 +231,16 @@ a {text-decoration: none;}
 .circleImg{
   width:125px;
   height:125px;
-  border-radius:50%;
+  border-radius:50% 50%;
   margin:20px;
   border:3px solid white;
 }
 
 .profileImg{
-  background-image: url("../IMAGES/Profile.jpg");
+  background-image: url("../IMAGES/theDuo.jpg");
   background-position: center;
-  background-size: contain;
+  background-size:cover;
+  background-repeat: no-repeat;
 }
 
 .workImg{
