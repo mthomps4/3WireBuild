@@ -89,6 +89,15 @@ app.controller('NavController', function($scope,$window,$document, $location){
       if(event.target !== button){
         nav1.style.display = "none";
       }
-    })
+    });
+
+    // document.addEventListener('touchstart', function(event){
+    //   var button = document.getElementById('menuButton');
+    //   var nav1 = document.getElementById('main-nav');
+    //
+    //   if(event.target !== nav1){
+    //     nav1.style.display = "none";
+    //   }
+    // });
 
 }); //END NAV CONTROLLER

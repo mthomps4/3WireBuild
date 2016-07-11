@@ -26,7 +26,7 @@ app.config(function($routeProvider){
   })
 //About Buttons
       .when('/contact', {
-        templateUrl: 'TEMPLATES/ABOUT/_contact.html',
+        templateUrl: 'TEMPLATES/ABOUT/_contact.php',
         controller: 'ContactController'
       })
       .when('/skills', {
