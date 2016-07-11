@@ -24,6 +24,38 @@ app.config(function($routeProvider){
     templateUrl: 'TEMPLATES/_blog.html',
     controller: 'BlogController'
   })
+//About Buttons
+      .when('/contact', {
+        templateUrl: 'TEMPLATES/ABOUT/_contact.html',
+        controller: 'ContactController'
+      })
+      .when('/skills', {
+        templateUrl: 'TEMPLATES/ABOUT/_skills.html',
+        controller: 'SkillsController'
+      })
+      .when('/resume', {
+        templateUrl: 'TEMPLATES/ABOUT/_resume.html',
+        controller: 'ResumeController'
+      })
+//Project Buttons
+      .when('/dev', {
+        templateUrl: 'TEMPLATES/PROJECTS/_dev.html',
+        controller: 'DevController'
+      })
+      .when('/builds', {
+        templateUrl: 'TEMPLATES/PROJECTS/_builds.html',
+        controller: 'BuildController'
+      })
+//Resources Buttons
+      .when('/devSources', {
+        templateUrl: 'TEMPLATES/SOURCES/_devSources.html',
+        controller: 'SourceController'
+      })
+      .when('/buildSources', {
+        templateUrl: 'TEMPLATES/SOURCES/_buildSources.html',
+        controller: 'SourceController'
+      })
+//BLOG??
   .otherwise({redirectTo: '/'});
 });
 

@@ -39,7 +39,7 @@ app.controller('NavController', function($scope,$window,$document, $location){
     var button = document.getElementById('menuButton');
     var nav1 = document.getElementById('main-nav');
     var nav2 = document.getElementById('main-nav2');
-
+    var header = document.getElementById('');
 
     if(window.innerWidth < 489){
       // alert("Window < 489");
@@ -74,12 +74,21 @@ app.controller('NavController', function($scope,$window,$document, $location){
     button.addEventListener('click', function(event) {
         if (nav1.style.display == "none"){
             nav1.style.display = "flex";
-        } else {
+        }
+        else {
             nav1.style.display = "none";
         }
         });
+
     nav1.addEventListener('click', function(event){
       this.style.display = "none";
+    });
+
+    document.addEventListener('click', function(event){
+      var button = document.getElementById('menuButton');
+      if(event.target !== button){
+        nav1.style.display = "none";
+      }
     })
 
 }); //END NAV CONTROLLER
