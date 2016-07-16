@@ -1,5 +1,5 @@
 <?php
-  if($_POST["submit"]) {
+  if ( isset( $_POST['submit'] ) ) {
       $recipient="matthew.thompson.a@gmail.com";
       $subject="3Wire Contact";
       $sender=$_POST["name"];
@@ -23,7 +23,7 @@
 			<?=$thankYou ?>
 
 
-      <form id="contact" action="" method="post">
+      <form id="contact" action="" method="POST">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" />
 
@@ -37,8 +37,9 @@
           <textarea id="msg" name="message" rows="4"></textarea>
 
 
-          <button class="contactSubmit" type="submit" name="submit">Send</button>
+          <button class="contactSubmit" id="submit" type="submit" name="submit">Send</button>
       </form>
+
 
 	</section> <!--Main-Section-->
 </div> <!--Wrapper-->
