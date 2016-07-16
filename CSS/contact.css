@@ -1,0 +1,44 @@
+h1.CTitle{
+  font-size: 3em;
+  font-weight: 200;
+  text-align: center;
+  width:100%;
+  color:black;
+  border:none;
+  padding:0;
+  margin:0;
+  margin-bottom: 20px;
+  opacity:.7;
+}
+
+#contact{
+  width:80%;
+  max-width: 570px;
+  margin:auto;
+  margin-bottom: 20px;
+  display:flex;
+  flex-direction: column;
+}
+
+#contact label {
+  color:#006064;
+  display:block;
+}
+
+#contact input, #contact textarea {
+  padding:5px;
+  margin:10px;
+  display:block;
+}
+
+.contactSubmit{
+  padding:5px 10px;
+  background-color:#607D8B;
+  color:white;
+  width:25%;
+  min-width: 100px;
+  align-self: flex-end;
+  margin-right: 10px;
+  border-radius: 20px;
+  border:none;
+}

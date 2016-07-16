@@ -1,18 +1,18 @@
 var button = document.getElementById('menuButton');
-var target = document.getElementById('main-nav');
+var nav1 = document.getElementById('main-nav');
 var nav2 = document.getElementById('main-nav2');
 
 //Makes sure appropriate menu is loaded "onload"
 window.onload = function(){
   if(window.innerWidth < 489){
-    target.style.display = "none";
+    nav1.style.display = "none";
     button.style.display = "block";
     nav2.style.display = "none";
   }
 
   if(window.innerWidth > 489){
     button.style.display = "none";
-    target.style.display = "none";
+    nav1.style.display = "none";
     nav2.style.display = "flex";
     }
 }
@@ -20,14 +20,14 @@ window.onload = function(){
 //Swaps Mobile Menu with Desktop Menu on Resize
 window.onresize = function(){
     if(window.innerWidth < 489){
-      target.style.display = "none";
+      nav1.style.display = "none";
       button.style.display = "block";
       nav2.style.display = "none";
     }
 
     if(window.innerWidth > 489){
       button.style.display = "none";
-      target.style.display = "none";
+      nav1.style.display = "none";
       nav2.style.display = "flex";
 
       }
@@ -35,9 +35,9 @@ window.onresize = function(){
 
 //Mobile Menu Button Toggle
 button.addEventListener('click', function(event) {
-    if (target.style.display == "none"){
-        target.style.display = "flex";
+    if (nav1.style.display == "none"){
+        nav1.style.display = "flex";
     } else {
-        target.style.display = "none";
+        nav1.style.display = "none";
     }
 });

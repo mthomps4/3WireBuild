@@ -26,10 +26,6 @@ html, body
 
 a {text-decoration: none;}
 
-h2{font-size: 1.3em;}
-h3{font-size:1em;}
-
-
 /*****Main Header********/
 
 #Main-Container
@@ -64,7 +60,8 @@ h3{font-size:1em;}
 
 #tag-line{
 	font-size:1em;
-  color:#607D8B;
+  color:#455A64;
+  opacity:.8;
 	font-style:normal;
 }
 
@@ -78,8 +75,9 @@ h3{font-size:1em;}
 #main-nav a:visited, #main-nav a
 		{color:white;}
 
-#main-nav a.active{
-	background-color:#00BCD4;
+
+#main-nav .active, #main-nav2 .active2{
+  background-color:#00BCD4;
 }
 
 #main-nav /*Mobile Block*/
@@ -92,6 +90,7 @@ h3{font-size:1em;}
   top:0;
   left:0;
   background:rgba(0, 0, 0, 0.75);
+  z-index: 2;
 }
 
 #main-nav a /*Check Flex Box Options for Items*/
@@ -124,8 +123,8 @@ h3{font-size:1em;}
 
 
   -webkit-box-shadow: 0px 0px 7px 0px rgba(136,136,136,1);
--moz-box-shadow: 0px 0px 7px 0px rgba(136,136,136,1);
-box-shadow: 0px 0px 7px 0px rgba(136,136,136,1);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(136,136,136,1);
+  box-shadow: 0px 0px 7px 0px rgba(136,136,136,1);
 }
 
 #menuButton:focus, #menuButton:active{
@@ -161,42 +160,101 @@ box-shadow: 0px 0px 7px 0px rgba(136,136,136,1);
 }
 
 
-/*****Circle Image Holder********/
-.profile{
-  width:175px;
-  height:175px;
-  border-radius:50%;
-  border:2px solid black;
-  margin:auto;
-  display:block;
-  margin-bottom:20px;
+/*****Main Section********/
+#main-content h1{
+  font-size: 3em;
+  font-weight: 200;
+  text-align: center;
+  width:100%;
+  padding:20px;
+  color:black;
+
+  border-bottom:solid 4px #00BCD4;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top:solid 4px #00BCD4;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
 }
 
-/*****Footer and Main Section********/
+#main-content h3{
+  font-weight: 400;
+  text-align: center;
+  margin:0;
+  padding:0;
+  color:black;
+  font-size:1.5em;
+  margin-bottom: 10px;
+  color:white;
+}
+
+#main-content p{
+  text-align:left;
+  opacity:.7;
+}
+
+
 #Wrapper{
-  height:calc(100vh - 260px);/*Adust pixels based on Header Height*/
+  /*height:calc(100vh - 260px);/*Adust pixels based on Header Height*/*/
   width:100%;
   padding:20px; /*Used for Main-Section*/
 }
 
 #Wrapper p{
   margin-bottom: 2em;
+  text-align:left;
+  opacity:.7;
 }
 
-#main-section{
-	height:calc(100vh - 280px);
-  overflow-y:auto;
+.flexContent{
+  background-color: #90A4AE;
+  color:white;
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content:space-between;
+  align-items: center;
+  border-bottom:solid 4px #00BCD4;
+  margin-bottom: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
-#main-section::-webkit-scrollbar{
-	width:0px;
-	background:transparent;
+#main-content h3{
+  flex-grow: 1;
+  font-size: 2em;
+  font-weight: 300;
+  margin-right: 20px;
 }
 
+/*****Circle Image Holders********/
+.circleImg{
+  min-width:125px;
+  height:125px;
+  border-radius:50% 50%;
+  margin:10px;
+  border:3px solid white;
+}
+
+.profileImg{
+  background-image: url("../IMAGES/Pro.jpg");
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.workImg{
+  background-image: url("../IMAGES/dovetails.jpg");
+  background-position: 58% 70%;
+  background-size: 300px;
+}
+
+/*****Footer********/
 footer{
-  height:200px;
-  background-color:#37474F;
-  color:#90A4AE;
+  height:135px;
+  background-color:#263238;
+  color:white;
+  opacity:.7;
 }
 
 #fLinks{
@@ -210,6 +268,7 @@ footer{
 #fContact{
   flex-grow:1;
   padding-left:1em;
+  opacity:.7;
 }
 
 #social{
@@ -229,8 +288,8 @@ footer{
   justify-content: center;
   align-items: center;
 
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   margin: 5px;
   margin-right:10px;
 }
