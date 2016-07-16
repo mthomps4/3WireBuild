@@ -16,6 +16,9 @@ app.controller('BlogController', function($scope) {
 app.controller('ContactController', function ($scope) {
 });
 
+app.controller('BuildController', function ($scope) {
+});
+
 app.controller('active', function($scope, $location){
         $scope.isActive = function (viewLocation) {
         var active = (viewLocation === $location.path());

@@ -16,9 +16,9 @@ app.config(function($routeProvider){
     templateUrl: 'TEMPLATES/_projects.html',
     controller: 'ProjectsController'
   })
-  .when('/resources', {
-    templateUrl: 'TEMPLATES/_resources.html',
-    controller: 'ResourcesController'
+  .when('/contact', {
+    templateUrl: 'TEMPLATES/_contact.html',
+    controller: 'ContactController'
   })
   .when('/blog', {
     templateUrl: 'TEMPLATES/_blog.html',
@@ -26,7 +26,7 @@ app.config(function($routeProvider){
   })
 //About Buttons
       .when('/contact', {
-        templateUrl: 'TEMPLATES/ABOUT/_contact.html',
+        templateUrl: 'TEMPLATES/_contact.html',
         controller: 'ContactController',
       })
       .when('/skills', {
@@ -45,6 +45,10 @@ app.config(function($routeProvider){
       .when('/builds', {
         templateUrl: 'TEMPLATES/PROJECTS/_builds.html',
         controller: 'BuildController'
+      })
+      .when('/resources',{
+        templateUrl: 'TEMPLATES/PROJECTS/_resources.html',
+        controller: 'ResourcesController'
       })
 //Resources Buttons
       .when('/devSources', {
