@@ -383,3 +383,17 @@ footer{
   background-repeat:no-repeat;
   background-position: center;
 }
+
+/********** Projects *****************/
+.lightwidget-widget{
+  height:250px;
+  width: 250px;
+  border: solid 3px black;
+  margin:auto;
+}
+
+.contactIcon{
+  width:32px;
+  height:32px;
+  display: inline;
+}
