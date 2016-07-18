@@ -20,6 +20,8 @@ html, body
   padding:0;
   height:100%;
 	background-color:#ECEFF1;
+  background:#424242;
+
   /*background-color:black;*/
   /*background-color:#EEE;*/
   /*#DEF*/
@@ -169,7 +171,7 @@ a {text-decoration: none;}
   text-align: center;
   width:100%;
   padding:20px;
-  color:black;
+  color:#ddd;
 
   border-bottom:solid 4px #00BCD4;
   border-bottom-left-radius: 20px;
@@ -191,6 +193,16 @@ a {text-decoration: none;}
   color:white;
 }
 
+#main-content h4{
+  color:#fff;
+  font-size: 1.25em;
+  opacity: .85;
+}
+
+#main-content a{
+  color:#ddd;
+}
+
 #main-content p{
   text-align:left;
   opacity:.7;
@@ -201,17 +213,23 @@ a {text-decoration: none;}
   /*height:calc(100vh - 260px);/*Adust pixels based on Header Height*/*/
   width:100%;
   padding:20px; /*Used for Main-Section*/
-  background-color:black;
 }
 
 #Wrapper p{
-  margin-bottom: 2em;
+  color:white;
+  margin-bottom: 30px;
   text-align:left;
   opacity:.7;
 }
 
+#Wrapper a:hover{
+  text-decoration: underline;
+  color:#00BCD4;
+}
+
 .flexContent{
   background-color: #90A4AE;
+  background-color: #212121;
   color:white;
   display:flex;
   flex-direction: row-reverse;
@@ -402,4 +420,6 @@ footer{
   width:32px;
   height:32px;
   display: inline;
+  margin-right: 10px;
+  margin-top:10px;
 }

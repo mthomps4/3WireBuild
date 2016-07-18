@@ -78,6 +78,7 @@
 	#Wrapper {
 		width:80%;
 		margin:auto;
+		margin-top:30px;
 	}
 
 }
@@ -121,4 +122,5 @@
 		max-width: 780px;
 		margin:auto;
 	}
+
 }

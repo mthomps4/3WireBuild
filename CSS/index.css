@@ -13,6 +13,7 @@
 
 #Tags{
   padding:2.5em 0px;
+  margin:0 75px;
 
   display:flex;
   flex-direction: row;
@@ -39,7 +40,12 @@
 .tagBox{
   background-color:#212121;
   margin:20px;
-  border:2px solid #F5F5F5;
+  margin-top:8px;
+  border:2px solid #424242;
+
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,.7);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,.7);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,.7);
 }
 
 .tagImage{
