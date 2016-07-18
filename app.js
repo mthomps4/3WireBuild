@@ -5,7 +5,7 @@ var app = angular.module('app',["ngRoute"]);
 app.config(function($routeProvider){
   $routeProvider
   .when('/', {
-    templateUrl: 'TEMPLATES/_about.html',
+    templateUrl: 'TEMPLATES/_index.html',
     controller: 'AboutController'
   })
   .when('/about', {
