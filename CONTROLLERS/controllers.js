@@ -10,48 +10,44 @@ app.controller('ProjectsController', function($scope) {
 app.controller('ResourcesController', function($scope) {
 });
 
-app.controller('BlogController', function($scope) {
-  var feed = new Instafeed({
-      get: 'tagged',
-      tagName: '3WireBuild',
+app.controller('BlogController', function($scope, $window, $http) {
+  // jsFlickrBadge(document.getElementById('3WireFlickr'), {
+  //     // your Flickr ID (find it here)
+  //     flickrId: '79639273@N05',
+  //     // feed type. user, group, contacts, etc.
+  //     feed: 'user',
+  //     // optional comma-delimited tags to filter by, only used with 'user' feed
+  //     tags: '3WireBuild',
+  //     // number of rows to display
+  //     rows: 4,
+  //     // number of columns to display
+  //     columns: 4,
+  //     // size of each thumbnail (any bigger than 75 will cause pixelization)
+  //     size: 75,
+  //     // animation to use.
+  //     // one of: vscroll, random, vscroll, shuffle, zoom, scroll, flipX, flipY
+  //     animation: 'vscroll',
+  //     // seconds each animation takes
+  //     animationSpeed: 1,
+  //     // seconds between each animation
+  //     animationPause: 2
+  //   });
 
-      // userId: 921849005,
-      clientId: 'f138e4254bd645b9920b3744224a6e66'
-      // accessToken: '921849005.1677ed0.41e55590d8164368bbcd08d77b21f942'
-  });
-  feed.run();
+// 'https://www.flickr.com/services/api/explore/flickr.photos.search'
+
+  var flickr = function() {
+  $.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=b2f9fdabc92cc6e24742ae3ec7eb67e8&user_id=79639273%40N05&text=%233WireBuild&format=rest&auth_token=72157668371811484-3f7fd72369c395bc&api_sig=bf5222e30e76d667bac09e22509d48bc',
+    function(data){
+      $('#3WireFlickr').innerHTML("<p>" + data + "</p>"); 
+    });//getJSON
+      console.log("Hmmm");
 
 
-  // var feed = new Instafeed({
-  // get: 'user',
-  // userId: 921849005,
-  // clientId: 'f138e4254bd645b9920b3744224a6e66',
-  // accessToken: '921849005.1677ed0.41e55590d8164368bbcd08d77b21f942',
-  // });
-  // feed.run();
+    };//flickr Function
 
-      // var userFeed = new Instafeed({
-      //     get: 'user',
-      //     userId: '921849005',
-      //     accessToken: '921849005.1677ed0.41e55590d8164368bbcd08d77b21f942',
-      //     filter:'3WireBuild'
-      //
-      // });
-      // userFeed.run();
+    flickr();
 
-//       #instafeed img {
-// padding:5px;
-// opacity:0.8;
-// filter:alpha(opacity=80);
-// }
-//
-// #instafeed img:hover {
-// opacity:1;
-// filter:alpha(opacity=100);
-// }
-
-      //http://tutvid.com/html-css-wordpress-tutorials/instagram-feed-onto-website-dreamweaver/
-});
+});//BlogController
 
 app.controller('ContactController', function ($scope) {
 });
