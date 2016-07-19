@@ -38,8 +38,14 @@ app.controller('BlogController', function($scope, $window, $http) {
   var flickr = function() {
   $.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=b2f9fdabc92cc6e24742ae3ec7eb67e8&user_id=79639273%40N05&text=%233WireBuild&format=json&nojsoncallback=1&auth_token=72157668371811484-3f7fd72369c395bc&api_sig=fb9ed9ffd8ca8c6b95ea0afedd184eb4',
     //ADD JQUERY BACK NOW THAT YOU HAVE JSON
-http://nurelm.com/bring-flickr-to-your-website-using-json-and-jquery/
-https://www.viget.com/articles/pulling-your-flickr-feed-with-jquery
+// "http://nurelm.com/bring-flickr-to-your-website-using-json-and-jquery/"
+// "https://www.viget.com/articles/pulling-your-flickr-feed-with-jquery"
+ function(data){
+$.each(data.items, function(i,item){
+  $("<img/>").attr("src", item.media.m).appendTo("#3WireFlickr")
+    });
+  });
+    
     };//flickr Function
 
     flickr();
