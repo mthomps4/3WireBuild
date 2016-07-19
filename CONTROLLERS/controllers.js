@@ -11,6 +11,46 @@ app.controller('ResourcesController', function($scope) {
 });
 
 app.controller('BlogController', function($scope) {
+  var feed = new Instafeed({
+      get: 'tagged',
+      tagName: '3WireBuild',
+
+      // userId: 921849005,
+      clientId: 'f138e4254bd645b9920b3744224a6e66'
+      // accessToken: '921849005.1677ed0.41e55590d8164368bbcd08d77b21f942'
+  });
+  feed.run();
+
+
+  // var feed = new Instafeed({
+  // get: 'user',
+  // userId: 921849005,
+  // clientId: 'f138e4254bd645b9920b3744224a6e66',
+  // accessToken: '921849005.1677ed0.41e55590d8164368bbcd08d77b21f942',
+  // });
+  // feed.run();
+
+      // var userFeed = new Instafeed({
+      //     get: 'user',
+      //     userId: '921849005',
+      //     accessToken: '921849005.1677ed0.41e55590d8164368bbcd08d77b21f942',
+      //     filter:'3WireBuild'
+      //
+      // });
+      // userFeed.run();
+
+//       #instafeed img {
+// padding:5px;
+// opacity:0.8;
+// filter:alpha(opacity=80);
+// }
+//
+// #instafeed img:hover {
+// opacity:1;
+// filter:alpha(opacity=100);
+// }
+
+      //http://tutvid.com/html-css-wordpress-tutorials/instagram-feed-onto-website-dreamweaver/
 });
 
 app.controller('ContactController', function ($scope) {

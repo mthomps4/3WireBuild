@@ -1,0 +1,14 @@
+<!-- curl -F 'client_id=f138e4254bd645b9920b3744224a6e66' \
+-F 'client_secret=9ebc4067f22340cbafa2e1817ff1857b' \
+-F 'grant_type=authorization_code' \
+-F 'redirect_uri=http://localhost:3000/users/auth/instagram/callback
+' \
+-F 'code=165a7d4025db4dccbbbd0ef11d49d040' \
+https://api.instagram.com/oauth/access_token
+
+921849005.1677ed0.41e55590d8164368bbcd08d77b21f942
+
+http://localhost:3000/users/auth/instagram/callback?code=165a7d4025db4dccbbbd0ef11d49d040 -->
+
+
+http://instagram.pixelunion.net/#access_token=921849005.1677ed0.41e55590d8164368bbcd08d77b21f942
