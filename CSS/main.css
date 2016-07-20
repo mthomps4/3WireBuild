@@ -179,7 +179,11 @@ a {text-decoration: none;}
   border-top:solid 4px #00BCD4;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
 
+#main-content h2{
+  color:white;
+  opacity:.8;
 }
 
 #main-content h3{
@@ -205,9 +209,9 @@ a {text-decoration: none;}
 
 #main-content p{
   text-align:left;
+  color:white;
   opacity:.7;
 }
-
 
 #Wrapper{
   /*height:calc(100vh - 260px);/*Adust pixels based on Header Height*/*/
@@ -255,6 +259,7 @@ a {text-decoration: none;}
   border-radius:50% 50%;
   margin:10px;
   border:3px solid white;
+  background-color:#424242;
 }
 
 .profileImg{

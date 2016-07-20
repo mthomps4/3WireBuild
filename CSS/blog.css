@@ -1,3 +1,21 @@
+#BlogWrapper{
+  width:100%;
+  padding:20px; /*Used for Main-Section*/
+  background-color:#424242;
+  background-image: url('../IMAGES/curls50.jpg');
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+  background-size: cover;
+}
+
+#main-blog-section{
+  background-color:rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding:50px;
+}
+
+
+/*******FLICKR ANIMATION *******/
 #Flickr{
   display:flex;
   flex-direction: row;
@@ -5,7 +23,7 @@
   height:240px;
   overflow: hidden;
   margin:0;
-  border: 2px solid blue;
+  border: 2px solid white;
 }
 
 img.flickrPic{
@@ -14,7 +32,6 @@ img.flickrPic{
   /*margin-right: 10px;*/
 
   animation: movePic 60s steps(20) infinite;
-
 }
 
 @-webkit-keyframes movePic {
@@ -32,4 +49,82 @@ img.flickrPic{
 @keyframes movePic {
   0%   { transform: translateX(0px);}
   100% { transform: translateX(-4800px); }
+}
+
+#flickrFloat{
+  position: relative;
+}
+
+#flickrFloat h4 {
+  color:white;
+  opacity:.8;
+  text-align: right;
+  font-style: italic;
+  position:absolute;
+  top:200px;
+  left:125px;
+  z-index: 2;
+}
+
+.clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+
+/********Main Styles********/
+
+#blogSide{
+  float:right;
+  color:white;
+}
+
+#links{
+  margin-top:20px;
+  margin-left: 10px;
+}
+
+#main-content{
+  margin-bottom:30px;
+}
+
+#blog-content{
+  float:left;
+  width:75%;
+}
+
+.postContent{
+  background-color: #90A4AE;
+  background-color: #212121;
+  color:white;
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  border-bottom:solid 4px #00BCD4;
+  margin-bottom: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 125px;
+}
+
+.blogTitle{
+  padding-bottom: 4px;
+}
+
+.description{
+  opacity: .8;
+}
+
+.blogThumbImg{
+  margin-left:-50px;
+  margin-bottom: -5px;
+}
+
+.postLink{
+  text-decoration: underline;
+  color: #00BCD4;
+  margin-left:20px;
 }
