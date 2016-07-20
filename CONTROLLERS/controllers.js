@@ -16,9 +16,9 @@ app.controller('BlogController', function($scope, $window, $http, $document) {
 // "https://www.viget.com/articles/pulling-your-flickr-feed-with-jquery"
 
 var flickr = function() {
-  $.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=b2f9fdabc92cc6e24742ae3ec7eb67e8&user_id=79639273%40N05&text=%233WireBuild&format=json&nojsoncallback=1&auth_token=72157668371811484-3f7fd72369c395bc&api_sig=fb9ed9ffd8ca8c6b95ea0afedd184eb4',
+  $.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=460a175621f03f602db68da359637fb1&user_id=79639273%40N05&text=%233WireBuild&format=json&nojsoncallback=1',
   function(data){
-    $.each(data.photos.photo, function(i, photo ,id, farm, server, secret){
+    $.each(data.photos.photo, function(i, photo, id, farm, server, secret){
     $("<img class='flickerPic'/>").attr("src",
     'https://farm' + photo.farm + '.staticflickr.com/' +
     photo.server + '/' + photo.id + '_' + photo.secret + '_m.jpg'
