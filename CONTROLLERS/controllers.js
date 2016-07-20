@@ -19,20 +19,20 @@ var flickr = function() {
   $.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=460a175621f03f602db68da359637fb1&user_id=79639273%40N05&text=%233WireBuild&format=json&nojsoncallback=1',
   function(data){
     $.each(data.photos.photo, function(i, photo, id, farm, server, secret){
-    $("<img class='flickerPic'/>").attr("src",
+    $("<img class='flickrPic'/>").attr("src",
     'https://farm' + photo.farm + '.staticflickr.com/' +
     photo.server + '/' + photo.id + '_' + photo.secret + '_m.jpg'
-  ).appendTo("#3WireFlickr");
+  ).appendTo("#Flickr");
 
-  if(i == 8){return false;}
+  if(i == 20){return false;}
     });
   });
 };//flickr Function
 
 flickr();
 
-
 console.log("merpBlog");
+
 });//BlogController
 
 app.controller('ContactController', function ($scope) {
