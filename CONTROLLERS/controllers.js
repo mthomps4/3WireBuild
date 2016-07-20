@@ -10,46 +10,29 @@ app.controller('ProjectsController', function($scope) {
 app.controller('ResourcesController', function($scope) {
 });
 
-app.controller('BlogController', function($scope, $window, $http) {
-  // jsFlickrBadge(document.getElementById('3WireFlickr'), {
-  //     // your Flickr ID (find it here)
-  //     flickrId: '79639273@N05',
-  //     // feed type. user, group, contacts, etc.
-  //     feed: 'user',
-  //     // optional comma-delimited tags to filter by, only used with 'user' feed
-  //     tags: '3WireBuild',
-  //     // number of rows to display
-  //     rows: 4,
-  //     // number of columns to display
-  //     columns: 4,
-  //     // size of each thumbnail (any bigger than 75 will cause pixelization)
-  //     size: 75,
-  //     // animation to use.
-  //     // one of: vscroll, random, vscroll, shuffle, zoom, scroll, flipX, flipY
-  //     animation: 'vscroll',
-  //     // seconds each animation takes
-  //     animationSpeed: 1,
-  //     // seconds between each animation
-  //     animationPause: 2
-  //   });
+app.controller('BlogController', function($scope, $window, $http, $document) {
 
-// 'https://www.flickr.com/services/api/explore/flickr.photos.search'
-
-  var flickr = function() {
-  $.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=b2f9fdabc92cc6e24742ae3ec7eb67e8&user_id=79639273%40N05&text=%233WireBuild&format=json&nojsoncallback=1&auth_token=72157668371811484-3f7fd72369c395bc&api_sig=fb9ed9ffd8ca8c6b95ea0afedd184eb4',
-    //ADD JQUERY BACK NOW THAT YOU HAVE JSON
 // "http://nurelm.com/bring-flickr-to-your-website-using-json-and-jquery/"
 // "https://www.viget.com/articles/pulling-your-flickr-feed-with-jquery"
- function(data){
-$.each(data.items, function(i,item){
-  $("<img/>").attr("src", item.media.m).appendTo("#3WireFlickr")
+
+var flickr = function() {
+  $.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=b2f9fdabc92cc6e24742ae3ec7eb67e8&user_id=79639273%40N05&text=%233WireBuild&format=json&nojsoncallback=1&auth_token=72157668371811484-3f7fd72369c395bc&api_sig=fb9ed9ffd8ca8c6b95ea0afedd184eb4',
+  function(data){
+    $.each(data.photos.photo, function(i, photo ,id, farm, server, secret){
+    $("<img class='flickerPic'/>").attr("src",
+    'https://farm' + photo.farm + '.staticflickr.com/' +
+    photo.server + '/' + photo.id + '_' + photo.secret + '_m.jpg'
+  ).appendTo("#3WireFlickr");
+
+  if(i == 8){return false;}
     });
   });
-    
-    };//flickr Function
+};//flickr Function
 
-    flickr();
+flickr();
 
+
+console.log("merpBlog");
 });//BlogController
 
 app.controller('ContactController', function ($scope) {
