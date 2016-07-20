@@ -21,6 +21,7 @@ html, body
   height:100%;
 	background-color:#ECEFF1;
   background:#424242;
+  background:#2f2f2f;
 
   /*background-color:black;*/
   /*background-color:#EEE;*/
@@ -217,6 +218,7 @@ a {text-decoration: none;}
   /*height:calc(100vh - 260px);/*Adust pixels based on Header Height*/*/
   width:100%;
   padding:20px; /*Used for Main-Section*/
+  position: relative;
 }
 
 #Wrapper p{
@@ -263,7 +265,7 @@ a {text-decoration: none;}
 }
 
 .profileImg{
-  background-image: url("../IMAGES/Pro.jpg");
+  background-image: url("../IMAGES/theDuo.jpg");
   background-position: center;
   background-size:cover;
   background-repeat: no-repeat;
@@ -274,6 +276,11 @@ a {text-decoration: none;}
   background-position: 58% 70%;
   background-size: 300px;
 }
+
+.contactImg{
+  display:none;
+}
+
 
 /*****Footer********/
 footer{

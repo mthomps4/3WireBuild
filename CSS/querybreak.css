@@ -70,6 +70,12 @@
 		flex-grow:1;
 		font-weight: 200;
 	}
+
+	#shrinkLarge{
+		max-width: 540px;
+		margin:auto;
+	}
+
 }
 
 
@@ -80,6 +86,9 @@
 		margin:auto;
 		margin-top:30px;
 	}
+
+
+
 
 }
 
@@ -125,4 +134,13 @@
 		/*margin:auto;*/
 	}
 
+	.contactImg{
+		display:inline;
+	}
+
+	#shrinkLarge{
+		max-width: 540px;
+		margin:auto;
+		margin-left: -50px;
+	}
 }

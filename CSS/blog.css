@@ -1,4 +1,217 @@
 #BlogWrapper{
+width:100%;
+padding:20px; /*Used for Main-Section*/
+background-color:#424242;
+background-image: url('../IMAGES/curls50.jpg');
+background-repeat: no-repeat;
+/*background-position: center;*/
+background-size: cover;
+}
+
+#main-blog-section{
+background-color:rgba(0, 0, 0, 0.5);
+border-radius: 20px;
+padding:5px;
+margin:0;
+}
+
+#main-blog-section h1{
+  margin-top:10px;
+}
+
+p#stillWorking{
+  padding:20px 0;
+  opacity:.9;
+  text-align: center;
+}
+
+
+/*******FLICKR ANIMATION *******/
+#Flickr{
+display:flex;
+flex-direction: row;
+width:240px;
+height:240px;
+overflow: hidden;
+margin:0;
+border: 2px solid white;
+}
+
+img.flickrPic{
+width:240px;
+height:240px;
+/*margin-right: 10px;*/
+
+animation: movePic 60s steps(20) infinite;
+}
+
+@-webkit-keyframes movePic {
+0%   { transform: translateX(0px);}
+100% { transform: translateX(-4800px); }
+}
+@-moz-keyframes movePic {
+0%   { transform: translateX(0px);}
+100% { transform: translateX(-4800px); }
+}
+@-o-keyframes movePic {
+0%   { transform: translateX(0px);}
+100% { transform: translateX(-4800px); }
+}
+@keyframes movePic {
+0%   { transform: translateX(0px);}
+100% { transform: translateX(-4800px); }
+}
+
+#flickrFloat{
+position: relative;
+}
+
+#flickrFloat h4 {
+color:white;
+opacity:.8;
+text-align: right;
+font-style: italic;
+position:absolute;
+top:200px;
+left:125px;
+z-index: 2;
+}
+
+.clearfix:after {
+ content: ".";
+ visibility: hidden;
+ display: block;
+ height: 0;
+ clear: both;
+}
+
+
+/********Main Styles********/
+
+#blogSide{
+color:white;
+display:flex;
+flex-direction: column;
+align-items: center;
+margin-bottom:20px;
+}
+
+#links{
+margin-top:20px;
+margin-left: -100px;
+}
+
+#main-content{
+margin-bottom:30px;
+}
+
+#blog-content{
+margin-bottom: 40px;
+}
+
+.postContent{
+background-color: #333;
+color:white;
+margin-bottom: 20px;
+border-bottom:solid 2px #00BCD4;
+}
+
+.postContent h3, .postContent p{
+  padding-left:10px;
+}
+
+.blogTitle{
+padding-bottom: 4px;
+margin-top:10px;
+}
+
+.description{
+opacity: .8;
+padding-bottom:5px;
+}
+
+.blogThumbImg{
+border-radius: 0px;
+width:100%;
+height:125px;
+margin:0;
+border:3px solid white;
+background-color:#424242;
+}
+
+.postLink{
+text-decoration: underline;
+color: #00BCD4;
+margin-left:20px;
+}
+
+@media(min-width:480px){
+  #blogSide{
+    flex-direction: row;
+  }
+  #links{
+    margin-top:0;
+    margin-left:30px;
+  }
+}
+
+@media(min-width:780px){
+  #blog-content{
+    padding-left:20px
+  }
+
+  .postContent{
+    background-color: #90A4AE;
+    background-color: #212121;
+    color:white;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    border-bottom:solid 4px #00BCD4;
+    margin-bottom: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 125px;
+    width:90%;
+    margin:auto;
+    margin-bottom:40px;
+  }
+
+  .blogTitle{
+    padding-bottom: 4px;
+  }
+
+  .description{
+    opacity: .8;
+  }
+
+  .blogThumbImg{
+    width:125px;
+    height:125px;
+    border-radius:50% 50%;
+    margin:10px;
+    border:3px solid white;
+    background-color:#424242;
+  }
+
+  .blogThumbImg{
+    margin-left:-50px;
+    margin-bottom: -5px;
+  }
+
+  .postLink{
+    text-decoration: underline;
+    color: #00BCD4;
+    margin-left:20px;
+  }
+
+  #blogSide{
+    justify-content: center;
+  }
+}
+
+@media(min-width:1025px){
+  #BlogWrapper{
   width:100%;
   padding:20px; /*Used for Main-Section*/
   background-color:#424242;
@@ -82,6 +295,14 @@ img.flickrPic{
   color:white;
 }
 
+#blogSide{
+  color:white;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom:20px;
+}
+
 #links{
   margin-top:20px;
   margin-left: 10px;
@@ -93,7 +314,8 @@ img.flickrPic{
 
 #blog-content{
   float:left;
-  width:75%;
+  width:70%;
+  padding-left:20px
 }
 
 .postContent{
@@ -119,6 +341,15 @@ img.flickrPic{
 }
 
 .blogThumbImg{
+  width:125px;
+  height:125px;
+  border-radius:50% 50%;
+  margin:10px;
+  border:3px solid white;
+  background-color:#424242;
+}
+
+.blogThumbImg{
   margin-left:-50px;
   margin-bottom: -5px;
 }
@@ -128,3 +359,4 @@ img.flickrPic{
   color: #00BCD4;
   margin-left:20px;
 }
+}/*@Media 1025*/
