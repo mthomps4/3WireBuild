@@ -5,7 +5,19 @@ app.controller('AboutController', function($scope) {
 });
 
 app.controller('ProjectsController', function($scope) {
-});
+
+var projImg = document.getElementsByClassName('projectLink');
+
+  $(projImg).each(function(i) {
+    ++i;
+    $(this).css("background", "url(../IMAGES/PROJECTS/project" + i + ".jpg)")
+    if(i==2){return false}
+    console.log(i);
+  });
+    console.log("merpProject Controller End");
+  });
+
+
 
 app.controller('ResourcesController', function($scope) {
 });
