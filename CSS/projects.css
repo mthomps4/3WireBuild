@@ -1,0 +1,49 @@
+#projectContainer{
+  height:450px;
+  width:100%;
+  margin:auto;
+  margin-bottom:20px;
+  background:black;
+  border:2px solid #ccc;
+
+  overflow:hidden;
+}
+
+#projects{
+  list-style: none;
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+
+  margin:0;
+  padding:0;
+
+  width:120%;
+  height:120%;
+
+  margin-top:-150px;
+  margin-left: -100px;
+
+  transform: rotateZ(-15deg);
+}
+
+.projectLink{
+  height:132px;
+  width: 25%;
+  background:blue;
+  border:1px solid rgba(0, 0, 0, 1);;
+  margin:0px;
+  padding:0;
+}
+
+#projectFollowText p{
+  margin:0;
+  padding-left:1em;
+  font-size: 1em;
+}
+
+#projectFollowText a{
+  font-weight: bold;
+  text-decoration: underline;
+  color:cyan;
+}

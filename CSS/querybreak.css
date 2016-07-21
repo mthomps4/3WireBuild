@@ -130,17 +130,13 @@
 	}
 
 	#main-content{
-		/*max-width: 780px;*/
-		/*margin:auto;*/
-	}
-
-	.contactImg{
-		display:inline;
+		margin:auto;
+		margin-bottom:30px;
+		max-width: 940px;
 	}
 
 	#shrinkLarge{
 		max-width: 540px;
 		margin:auto;
-		margin-left: -50px;
 	}
 }

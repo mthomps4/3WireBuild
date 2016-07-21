@@ -42,12 +42,3 @@ h1.CTitle{
   border-radius: 20px;
   border:none;
 }
-
-.contactImg{
-  position:absolute;
-  width:200px;
-  height:200px;
-  top:150px;
-  right:0px;
-  background-image: url('../IMAGES/Profile.jpg');
-}
