@@ -50,10 +50,19 @@
   box-shadow: inset 0px 0px 120px 2px rgba(0,0,0,0.75);
 }
 
+.projectLink:hover{
+  -webkit-box-shadow: inset 0px 0px 120px 2px rgba(255,255,255,0.75);
+  -moz-box-shadow: inset 0px 0px 120px 2px rgba(255,255,255,0.75);
+  box-shadow: inset 0px 0px 120px 2px rgba(255,255,255,0.75);
+}
+
 #projectFollowText p{
   margin:0;
   padding-left:1em;
   font-size: 1em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #projectFollowText a{

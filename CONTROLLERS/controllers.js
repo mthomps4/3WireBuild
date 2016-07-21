@@ -7,13 +7,19 @@ app.controller('AboutController', function($scope) {
 app.controller('ProjectsController', function($scope) {
 
 var projImg = document.getElementsByClassName('projectLink');
-
+// .css("background", "url(../IMAGES/PROJECTS/project" + i + ".jpg)")
   $(projImg).each(function(i) {
     ++i;
-    $(this).css("background", "url(../IMAGES/PROJECTS/project" + i + ".jpg)")
-    if(i==2){return false}
-    console.log(i);
+    $(this)
+    .css({backgroundImage: "url(../IMAGES/PROJECTS/project" + i + ".jpg)",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover"});
+
+    $(this).attr("href", "../IMAGES/PROJECTS/project" + i + ".jpg)");
+    if(i==24){return false}
   });
+
     console.log("merpProject Controller End");
   });
 
