@@ -4,9 +4,31 @@
   margin:auto;
   margin-bottom:20px;
   background:black;
-  border:2px solid #ccc;
+  border:3px solid #888;
 
   overflow:hidden;
+
+  position: relative;
+}
+
+#forkTag{
+  position: absolute;
+  z-index: 10;
+  background-color:#00BCD4;
+  padding:8px 10px;
+  width:370px;
+  color:white;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px black;
+  transform: rotateZ(-45deg);
+  top:50px;
+  left:-110px;
+  text-align: center;
+}
+
+#forkTag a:hover{
+  text-decoration: none;
+  color:black;
 }
 
 #projects{

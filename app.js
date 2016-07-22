@@ -63,6 +63,7 @@ app.config(function($routeProvider){
   .otherwise({redirectTo: '/'});
 });
 
+
 // app.run(['$window', function($window){
 //
 //   $window.onload = function(){

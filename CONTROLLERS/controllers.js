@@ -16,7 +16,6 @@ var projImg = document.getElementsByClassName('projectLink');
           backgroundPosition: "center",
           backgroundSize: "cover"});
 
-    $(this).attr("href", "../IMAGES/PROJECTS/project" + i + ".jpg)");
     if(i==24){return false}
   });
 
@@ -30,24 +29,19 @@ app.controller('ResourcesController', function($scope) {
 
 app.controller('BlogController', function($scope, $window, $http, $document) {
 
-// "http://nurelm.com/bring-flickr-to-your-website-using-json-and-jquery/"
-// "https://www.viget.com/articles/pulling-your-flickr-feed-with-jquery"
-
 var flickr = function() {
-  $.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=460a175621f03f602db68da359637fb1&user_id=79639273%40N05&text=%233WireBuild&format=json&nojsoncallback=1',
-  function(data){
+  return $.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=460a175621f03f602db68da359637fb1&user_id=79639273%40N05&text=%233WireBuild&format=json&nojsoncallback=1')
+    .then(function(data){
     $.each(data.photos.photo, function(i, photo, id, farm, server, secret){
     $("<img class='flickrPic'/>").attr("src",
     'https://farm' + photo.farm + '.staticflickr.com/' +
     photo.server + '/' + photo.id + '_' + photo.secret + '_m.jpg'
   ).appendTo("#Flickr");
-
   if(i == 20){return false;}
     });
   });
 };//flickr Function
-
-flickr();
+  flickr();
 
 console.log("merpBlog");
 

@@ -63,6 +63,15 @@
   margin:0;
 }
 
+.tagBox a {
+  text-decoration: underline;
+  color:cyan;
+}
+
+.tagBox a:hover{
+  color:#00BCD4;
+}
+
 
 @media (min-width:489px){
 
