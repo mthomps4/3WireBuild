@@ -46,14 +46,27 @@
 			<ul id="Flickr"></ul>
 		</div>
 
-		<div id="links">
+		<div id="buttons">
+			<a class="infobox" ng-click="categories = ! categories">Categories</a>
+			<a class="infobox tags">Tags</a>
+			<!-- <a class="infobox">?</a> -->
+		</div>
+
+		<div class='tagBox' ng-show="categories">
+<div>
+	<p> categories </p>
+				<li>{{post.categories}} </li>
+		</div>
+
+
+		<!-- <div id="links">
 				<h4>Blog Follows</h4>
 					<ul>
 						<li> sample 1 </li>
 						<li> sample 2 </li>
 						<li> sample 3 </li>
 					</ul>
-				</div>
+				</div> -->
 
 
 </aside>
@@ -64,8 +77,7 @@
 
 
 
-<div id="buttons">
+<!-- <div id="buttons">
 	<a class="infobox categories">Categories</a>
 	<a class="infobox tags">Tags</a>
-	<!-- <a class="infobox">?</a> -->
-</div>
+</div> -->

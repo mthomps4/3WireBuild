@@ -29,8 +29,8 @@ app.controller('ResourcesController', function($scope) {
 
 app.controller('BlogController', function($scope, $window, $http, $document) {
 
-var flickr = function() {
-  return $.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=460a175621f03f602db68da359637fb1&user_id=79639273%40N05&text=%233WireBuild&format=json&nojsoncallback=1')
+
+  $.getJSON('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=460a175621f03f602db68da359637fb1&user_id=79639273%40N05&text=%233WireBuild&format=json&nojsoncallback=1')
     .then(function(data){
     $.each(data.photos.photo, function(i, photo, id, farm, server, secret){
     $("<img class='flickrPic'/>").attr("src",
@@ -40,8 +40,9 @@ var flickr = function() {
   if(i == 20){return false;}
     });
   });
-};//flickr Function
-  flickr();
+//flickr Function
+
+  // flickr();
 
 console.log("merpBlog");
 
