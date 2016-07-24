@@ -124,13 +124,13 @@ border-bottom:solid 2px #00BCD4;
   padding-bottom: 25px;
 }
 .blogTitle{
-padding-bottom: 4px;
-margin-top:10px;
+  padding-bottom: 4px;
+  margin-top:10px;
 }
 
 .description{
-opacity: .8;
-padding-bottom:5px;
+  opacity: .8;
+  padding-bottom:5px;
 }
 
 .imageHolder{
@@ -143,14 +143,14 @@ padding-bottom:5px;
 }
 
 .blogThumbImg{
-width:100%;
-margin:0;
+  width:100%;
+  margin:0;
 }
 
 .postLink{
-text-decoration: underline;
-color: #00BCD4;
-margin-left:20px;
+  text-decoration: underline;
+  color: #00BCD4;
+  margin-left:20px;
 }
 
 @media(min-width:480px){
@@ -251,23 +251,7 @@ margin-left:20px;
 
 
 /*******FLICKR ANIMATION *******/
-#Flickr{
-  display:flex;
-  flex-direction: row;
-  width:240px;
-  height:240px;
-  overflow: hidden;
-  margin:0;
-  border: 2px solid white;
-}
 
-img.flickrPic{
-  width:240px;
-  height:240px;
-  /*margin-right: 10px;*/
-
-  animation: movePic 60s steps(20) infinite;
-}
 
 @-webkit-keyframes movePic {
   0%   { transform: translateX(0px);}
@@ -288,6 +272,10 @@ img.flickrPic{
 
 #flickrFloat{
   position: relative;
+  overflow: hidden;
+  width:240px;
+  height:240px;
+  border: 2px solid white;
 }
 
 #flickrFloat h4 {
@@ -309,6 +297,22 @@ img.flickrPic{
    clear: both;
 }
 
+#Flickr{
+  display:flex;
+  flex-direction: row;
+  min-width:4800px;
+  height:240px;
+  /*overflow: hidden;*/
+  margin:0;
+}
+
+img.flickrPic{
+  width:240px;
+  height:240px;
+  /*margin-right: 10px;*/
+
+  animation: movePic 60s steps(20) infinite;
+}
 
 /********Main Styles********/
 
