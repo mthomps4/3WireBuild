@@ -47,6 +47,17 @@ console.log("merpBlog");
 
 });//BlogController
 
+app.controller('postController',function($scope, $http){
+    $http.get('Posts.json', {headers:{'Cache-Control' : 'no-cache'}}).success(function(data){
+       $scope.posts = {};
+       $scope.posts = data;
+       console.log($scope.posts);
+        });
+        // $.getJSON('/some/path', {_: new Date().getTime()});
+
+      console.log("merpBlog Post");
+});
+
 app.controller('ContactController', function ($scope) {
 });
 
