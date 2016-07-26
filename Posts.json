@@ -12,8 +12,9 @@
         "categories": ["post", "3wire", "boomTown"],
         "tags": ["tag1", "development", "woodworking"],
         "author": "Matt Thompson",
+        "bodyImg": "https://c8.staticflickr.com/9/8786/28415371255_9e14b14ea5_b.jpg",
         "image":"https://c8.staticflickr.com/9/8786/28415371255_9e14b14ea5_b.jpg width='1024' height='1024'",
-        "createdOn":122415
+        "Date":"2016-07-25"
   },
 
   {
@@ -29,7 +30,7 @@
         "tags": ["tag1"],
         "author": "Matt Thompson",
         "image":"https://c8.staticflickr.com/9/8786/28415371255_9e14b14ea5_b.jpg",
-        "createdOn":122015
+        "Date":"2016-07-25"
   },
 
 {
@@ -38,7 +39,7 @@
         "body": "Blank Draft POst <> ;, ! # ^ && <h1>BOOM BABY</h1>",
         "author": "Matt Thompson ",
         "image":"https://c8.staticflickr.com/9/8786/28415371255_9e14b14ea5_b.jpg",
-        "createdOn":111515
+        "Date":"2016-07-25"
   },
 
 {
@@ -54,7 +55,7 @@
         "tags": ["development"],
         "author": "Matt Thompson",
         "image":"http://placekitten.com/g/2000/600",
-        "createdOn":1408547127216
+        "Date":"2016-07-25"
   }
 
 

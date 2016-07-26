@@ -14,7 +14,15 @@
 			<h3 class="blogTitle">{{post.title}}</h3>
 			<p class="description"> {{post.tagline}}<a class="postLink" ng-click="showBody = ! showBody">Read More... </a></p>
 
-			<p class ="blogBody" ng-show="showBody">{{post.body}}</p>
+			<div class ="blogBody" ng-show="showBody">
+				<p>{{post.body}}</p>
+				<img class="blogBodyImg" src={{post.bodyImg}}>
+				<div class="postMeta">
+					<p> {{post.Date | date}}</p>
+					<p> {{post.author}} </p>
+				</div>
+				<p class="postLink readLess" ng-click="showBody = ! showBody">Read Less</p>
+
 			</div>
 		</div>
 
@@ -40,23 +48,33 @@
 
 </section> <!--blog-content-->
 
-<aside id="blogSide">
+<aside id="blogSide" ng-controller="postController">
 		<div id="flickrFloat">
 			<h4> @3WireBuild </h4>
 			<ul id="Flickr"></ul>
 		</div>
 
-		<div id="buttons">
+		<!-- <div id="buttons">
 			<a class="infobox" ng-click="categories = ! categories">Categories</a>
-			<a class="infobox tags">Tags</a>
+			<a class="infobox" ng-click="tags = ! tags">Tags</a>
 			<!-- <a class="infobox">?</a> -->
 		</div>
 
 		<div class='tagBox' ng-show="categories">
 <div>
-	<p> categories </p>
+	<ul ng-repeat="post in posts">
 				<li>{{post.categories}} </li>
+			</ul>
 		</div>
+	</div>
+
+		<div class='tagBox' ng-show="tags">
+<div>
+	<ul ng-repeat="post in posts">
+				<li>{{post.tags}} </li>
+			</ul>
+		</div>
+	</div> -->
 
 
 		<!-- <div id="links">
