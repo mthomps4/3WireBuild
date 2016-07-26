@@ -49,12 +49,41 @@ console.log("merpBlog");
 });//BlogController
 
 app.controller('postController',function($scope, $http){
+
     $http.get('Posts.json', {headers:{'Cache-Control' : 'no-cache'}}).success(function(data){
        $scope.posts = {};
        $scope.posts = data;
-       console.log($scope.posts);
-        });
-        // $.getJSON('/some/path', {_: new Date().getTime()});
+       console.log($scope.posts.length);
+       console.log($scope.posts.length);
+       console.log($scope.pageSize);
+       var pages = function(){
+           return Math.ceil($scope.posts.length/$scope.pageSize);
+       };
+
+       $scope.currentPage = 0;
+       $scope.pageSize = 3;
+       // $scope.numberOfPages = 2;
+
+       $scope.numberOfPages = pages;
+       console.log($scope.numberOfPages);
+    });
+
+    // $scope.currentPage = 0;
+    // $scope.pageSize = 2;
+    // // $scope.numberOfPages = 2;
+    //
+    // $scope.numberOfPages = pages;
+    // console.log($scope.numberOfPages);
+
+//We already have a limitTo filter built-in to angular,
+//let's make a startFrom filter
+// app.filter('startFrom', function() {
+//    return function(input, start) {
+//        start = +start; //parse to int
+//        return input.slice(start);
+//    }
+// });
+
 
       console.log("merpBlog Post");
 });
