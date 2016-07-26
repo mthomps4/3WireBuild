@@ -223,9 +223,9 @@ a {text-decoration: none;}
 
 #Wrapper p{
   color:white;
-  margin-bottom: 30px;
+  margin-bottom: 2.5em;
   text-align:left;
-  opacity:.7;
+  opacity:.85;
 }
 
 #Wrapper a:hover{
@@ -265,7 +265,7 @@ a {text-decoration: none;}
 }
 
 .profileImg{
-  background-image: url("../IMAGES/theDuo.jpg");
+  background-image: url("../IMAGES/Pro.jpg");
   background-position: center;
   background-size:cover;
   background-repeat: no-repeat;

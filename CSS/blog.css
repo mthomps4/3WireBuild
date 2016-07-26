@@ -187,7 +187,7 @@ padding-bottom: 20px;
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  width:40%;
+  /*width:40%;*/
   margin:auto;
   margin-top:25px;
 }
@@ -236,6 +236,10 @@ padding-bottom: 20px;
 
   #flickrFloat{
     margin:auto;
+  }
+
+  #showMore{
+    width:40%;
   }
 }
 
@@ -381,10 +385,7 @@ img.flickrPic{
   width:240px;
   height:240px;
   margin:0;
-  /*margin-right: 10px;*/
-
   animation: movePic 60s steps(20) infinite;
-  animation-delay:2s;
 }
 
 /********Main Styles********/

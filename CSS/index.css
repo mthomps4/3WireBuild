@@ -54,11 +54,12 @@
 .tagImage{
   margin:auto;
   width:100%;
+  border-bottom:solid 2px #777;
 }
 
 .tagBox p {
   color: #FAFAFA;
-  opacity:.7;
+  opacity:.93;
   padding: 10px 5px;
   margin:0;
 }
