@@ -3,12 +3,12 @@
 <div id="main-blog-section" class="clearfix">
 	<div id="main-content">
 		<h1>3WireBuild</h1>
-		<p id="stillWorking"> 3WireBuild was created to document the process... The process is still working.</p>
+		<p id="stillWorking">3WireBuild was created to document the learning process... </p>
 	</div>
 
 <section id="blog-content" ng-controller="postController">
 
-	<div class="postContent" ng-repeat='post in posts |  limitTo:pageSize:currentPage*pageSize'>
+	<div class="postContent" ng-repeat='post in posts | orderBy:"-" |  limitTo:pageSize:currentPage*pageSize' >
 		<div class="imageHolder"><image class="blogThumbImg" src={{post.image}}></div>
 
 			<div>
@@ -17,7 +17,7 @@
 
 			<div class ="blogBody" ng-show="showBody">
 				<p>{{post.body}}</p>
-				<img class="blogBodyImg" src={{post.bodyImg}}>
+				<img class="blogBodyImg" src={{post.image}}>
 				<div class="postMeta">
 					<p> {{post.Date | date}}</p>
 					<p> {{post.author}} </p>
