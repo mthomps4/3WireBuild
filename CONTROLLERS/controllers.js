@@ -16,7 +16,7 @@ var projImg = document.getElementsByClassName('projectLink');
           backgroundPosition: "center",
           backgroundSize: "cover"});
 
-    if(i==20){return false}
+    if(i==24){return false}
   });
 
     console.log("merpProject Controller End");
@@ -83,7 +83,7 @@ app.controller('AdminController', function($scope, $http){
       });
     };
 
-//     $scope.mydata = { model1: '', model2: ''} ;// initializing the model earlier on (good practice) 
+//     $scope.mydata = { model1: '', model2: ''} ;// initializing the model earlier on (good practice)
 //
 // $http.get("_/js/data.json").success(function(data) {
 //    $scope.mydata.data = data;
