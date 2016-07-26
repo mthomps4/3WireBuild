@@ -29,6 +29,10 @@ app.config(function($routeProvider){
         templateUrl: 'TEMPLATES/ABOUT/_resume.html',
         controller: 'ResumeController'
       })
+      .when('/adminPost', {
+        templateUrl: 'TEMPLATES/_admin.html',
+        controller: 'AdminController'
+      })
   .otherwise({redirectTo: '/'});
 });
 

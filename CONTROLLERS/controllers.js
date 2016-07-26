@@ -64,6 +64,44 @@ app.controller('postController',function($scope, $http){
       console.log("merpBlog Post");
 });
 
+
+
+
+
+
+app.controller('AdminController', function($scope, $http){
+    $scope.post = {};
+    $scope.newPostForm = function() {
+      $http({
+        method: 'POST',
+        url : '../Posts.json',
+        data : $scope.post,
+        headers : {'Content-Type': 'application/x-www-form-urlencoded'}
+      })
+      .success(function(data){
+          $scope.data.push('../Posts.json', data);
+      });
+    };
+
+//     $scope.mydata = { model1: '', model2: ''} ;// initializing the model earlier on (good practice) 
+//
+// $http.get("_/js/data.json").success(function(data) {
+//    $scope.mydata.data = data;
+// }); //<----- forgot a bracket here!
+//
+// $scope.addThis = function() {
+//   $scope.mydata.model1=$scope.mydata.data.keyname1;
+//   $scope.mydata.model2 =$scope.mydata.data.keyname2;
+// };
+
+});
+
+
+
+
+
+
+
 app.controller('ContactController', function ($scope) {
 });
 
