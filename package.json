@@ -1,0 +1,30 @@
+{
+  "name": "3wirebuild",
+  "version": "1.0.0",
+  "description": "personal website and blog",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mthomps4/3WireBuild.git"
+  },
+  "keywords": [
+    "3WireBuild"
+  ],
+  "author": "Matthew Thompson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mthomps4/3WireBuild/issues"
+  },
+  "homepage": "https://github.com/mthomps4/3WireBuild#readme",
+  "devDependencies": {
+    "grunt": ">=0.4.5 <1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-ng-annotate": "^2.0.2"
+  }
+}

@@ -1,0 +1,64 @@
+<div id="BlogWrapper">
+
+<div id="main-blog-section" class="clearfix">
+	<div id="main-content">
+		<h1>3WireBuild</h1>
+		<p id="stillWorking">3WireBuild was created to document the learning process... </p>
+	</div>
+
+<section id="blog-content" ng-controller="postController">
+	<div class="postContent" ng-repeat='post in posts | orderBy:"-" |  limitTo:pageSize:currentPage*pageSize' >
+				<div class="imageHolder"><image class="blogThumbImg" src={{post.image}}>
+					</div>
+
+			<div>
+			<h3 class="blogTitle">{{post.title}}</h3>
+			<p class="description"> {{post.tagline}}<a class="postLink" ng-click="showBody = ! showBody">Read More... </a></p>
+
+			<div class ="blogBody" ng-show="showBody">
+				<p>{{post.body}}</p>
+				<img class="blogBodyImg" src={{post.image}}>
+						<div class="postMeta">
+							<p> {{post.Date | date}}</p>
+							<p> {{post.author}} </p>
+						</div>
+				<p class="postLink readLess" ng-click="showBody = ! showBody">Read Less</p>
+			</div>
+		</div>
+
+	</div>
+
+<div id="showMore">
+	<button class="pageButton" ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">
+	Previous
+	</button>
+
+	<p class="pageNumber">{{currentPage+1}}/{{numberOfPages()}}</p>
+	<button class="pageButton" ng-disabled="currentPage >= posts.length/pageSize - 1" ng-click="currentPage=currentPage+1">
+	Next
+	</button>
+</div>
+
+</section> <!--blog-content-->
+
+
+
+<aside id="blogSide" ng-controller="flickrController">
+	<a href="https://www.instagram.com/3wirebuild/">
+		<div id="flickrFloat">
+			<h4> @3WireBuild </h4>
+			<ul id="Flickr"></ul>
+		</div>
+	</a>
+</aside>
+
+
+	</div> <!--Main-blog-Section-->
+</div> <!--BlogWrapper-->
+
+
+
+<!-- <div id="buttons">
+	<a class="infobox categories">Categories</a>
+	<a class="infobox tags">Tags</a>
+</div> -->

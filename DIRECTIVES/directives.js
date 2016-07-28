@@ -11,3 +11,7 @@ app.directive("mainFooter", function(){
       templateUrl: "../TEMPLATES/_footer.html",
   };
 });
+
+//BACK
+
+var x = 2; 
