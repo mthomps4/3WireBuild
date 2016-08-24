@@ -8,7 +8,7 @@ grunt.initConfig({
 
 concat: {
   buildCSS: {
-      src: ['DEV/CSS/normalize.css', 'DEV/CSS/main.css','DEV/CSS/index.css','DEV/CSS/blog.css','DEV/CSS/projects.css','DEV/CSS/querybreak.css'],
+      src: ['DEV/CSS/normalize.css', 'DEV/CSS/main.css','DEV/CSS/index.css','DEV/CSS/blog.css','DEV/CSS/projects.css','DEV/CSS/resume.css','DEV/CSS/querybreak.css'],
       dest: 'BUILD/styles.min.css'
    },//buildCSS
 

@@ -26,7 +26,7 @@ app.config(function($routeProvider){
   })
 //About Buttons
       .when('/resume', {
-        templateUrl: 'TEMPLATES/ABOUT/_resume.html',
+        templateUrl: 'TEMPLATES/_resume.html',
         controller: 'ResumeController'
       })
       .when('/adminPost', {

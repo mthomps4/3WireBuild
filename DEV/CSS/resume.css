@@ -1,0 +1,59 @@
+#resume {
+  color: #FAFAFA;
+  opacity:.93;
+  font-family: 'Open Sans', sans-serif;
+  width:80%;
+  margin:auto;
+  margin-top:3em;
+  margin-bottom:3em;
+}
+
+#resume a button {
+  padding: 10px 20px;
+  background-color: #00BCD4;
+  color:white;
+  border:#00BCD4;
+  float:right;
+  border-radius:20px;
+}
+
+#resume .ResLinkedin{
+  background-image:url("../IMAGES/Social2/linkedin.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:2em;
+  height:2em;
+  float:right;
+  margin-right: 1em;
+}
+
+
+#resume .ResLinkedin:hover{
+  background-image:url("../IMAGES/Social2/linkedinBlack.png");
+}
+
+#resume a button:hover{
+  background-color:#26C6DA;
+  border:white;
+}
+
+#resume h3 {
+  color:white;
+  font-variant-caps: small-caps;
+  font-size:1.5em;
+  padding:10px 0px;
+}
+
+#resume h4{
+  padding-top:1em;
+}
+
+#resume p {
+  opacity:.8;
+  padding-left:1em;
+}
+
+#resume .bumpUp{
+  margin-top: -1.5em;
+}
