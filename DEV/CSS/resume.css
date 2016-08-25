@@ -17,6 +17,10 @@
   border-radius:20px;
 }
 
+#resume a button:focus {
+  outline:none;
+}
+
 #resume .ResLinkedin{
   background-image:url("../IMAGES/Social2/linkedin.png");
   background-position: center;
