@@ -1,5 +1,6 @@
 # 3WireBuild
-Main portfolio website. @mthomps4 #3WireBuild
+Main portfolio website and woodworking blog(in Progress). @mthomps4 #3WireBuild
+
 
 #Layout
 ##About

@@ -61,7 +61,7 @@
   color: #FAFAFA;
   opacity:.93;
   padding: 10px 5px;
-  margin:0;
+  margin:0px 5px 5px 5px;
 }
 
 .tagBox a {
@@ -97,12 +97,11 @@
 }
 
 
-@media (min-width:680px){
+@media (min-width:750px){
 
 #Tags{
       padding:2.5em 0px;
       margin:0 25px;
-
       display:flex;
       flex-direction: row;
       justify-content: space-between;
@@ -125,12 +124,14 @@
 
 
 
-
-
 @media (min-width:1025px){
-
     #Tags{
       margin:0 75px;
     }
-
 }/*Media 1025*/
+
+@media(min-width:1250px){
+  #Tags{
+    margin:0 100px;
+  }
+}

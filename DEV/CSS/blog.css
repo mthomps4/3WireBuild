@@ -27,6 +27,10 @@ p#stillWorking{
   text-align: center;
 }
 
+#stillWorking a{
+  color:#00BCD4;
+}
+
 
 /*******FLICKR ANIMATION *******/
 #Flickr{
