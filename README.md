@@ -1,6 +1,8 @@
 # 3WireBuild
 Main portfolio website and woodworking blog(in Progress). @mthomps4 #3WireBuild.
-Using Angular 1.5 and Grunt for Development / Production Builds.
+
+- Using Angular 1.5 and PHP
+- Grunt for Development / Production Builds.
 
 ## Home
 - Trio description
