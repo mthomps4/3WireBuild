@@ -19,13 +19,11 @@ html, body
 	margin:0;
   padding:0;
   height:100%;
-	background-color:#ECEFF1;
+	/*background-color:#ECEFF1;*/
   background:#424242;
-  background:#2f2f2f;
-
+  /*background:#2f2f2f;*/
   /*background-color:black;*/
   /*background-color:#EEE;*/
-  /*#DEF*/
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -167,7 +165,7 @@ a {text-decoration: none;}
 
 /*****Main Section********/
 #main-content h1{
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 200;
   text-align: center;
   width:100%;

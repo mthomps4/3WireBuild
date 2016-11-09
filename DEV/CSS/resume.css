@@ -30,6 +30,7 @@
   height:2em;
   float:right;
   margin-right: 1em;
+  margin-bottom:2em;
 }
 
 
@@ -56,6 +57,7 @@
 #resume p {
   opacity:.8;
   padding-left:1em;
+  padding-bottom:1em;
 }
 
 #resume .bumpUp{
